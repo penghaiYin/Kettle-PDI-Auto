@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.rocsea</groupId>
+        <artifactId>Kettle-PDI-Auto</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <groupId>com.rocsea</groupId>
+    <artifactId>kettle-pdi</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>kettle-pdi</name>
+    <description>kettle-pdi</description>
+    <properties>
+        <druid.version>1.1.18</druid.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.rocsea</groupId>
+            <artifactId>etl-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!-- kettle-->
+        <dependency>
+            <groupId>pentaho-kettle</groupId>
+            <artifactId>kettle-core</artifactId>
+            <version>9.3.0.0-428</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+        <!-- dynamic query -->
+        <dependency>
+            <groupId>com.github.wz2cool</groupId>
+            <artifactId>mybatis-dynamic-query</artifactId>
+            <version>3.2.20</version>
+        </dependency>
+        <!-- druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+    </dependencies>
+</project>
